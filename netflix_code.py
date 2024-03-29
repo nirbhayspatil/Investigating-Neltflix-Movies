@@ -41,12 +41,14 @@ for genre in netflix_movies['genre']:
 # Inspect first 10 values of list
 colors[:10]
 
-
+# Set the figure style and initalize a new figure
 fig = plt.figure(figsize=(12, 8))
 
+# Scatter plot of duration versus release year 
 plt.scatter(netflix_movies['release_year'], netflix_movies['duration'], c=colors)
 plt.xlabel('Release year')
 plt.ylabel("Duration (min)")
 plt.title("Movie Duration by Year of Release")
 
-answer = "no"
+
+#Conclusion: Netflix movies are not getting shorter
